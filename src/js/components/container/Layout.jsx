@@ -8,7 +8,7 @@ import Welcome from '../presentational/Welcome.jsx';
 // import FormContainer from "./FormContainer.jsx";
 // import Input from "../presentational/Input.jsx";
 
-class Main extends Component {
+class Layout extends Component {
   render() {
     return (
       <div>
@@ -19,4 +19,4 @@ class Main extends Component {
   }
 }
 
-ReactDOM.render(<Main />, document.getElementById("app"));
+ReactDOM.render(<Layout />, document.getElementById("app"));
