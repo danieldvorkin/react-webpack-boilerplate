@@ -8,7 +8,7 @@
     "start": "./node_modules/webpack/bin/webpack.js -p --progress && node server.js",
     "dev": "webpack-dev-server --open --mode development",
     "build": "webpack --mode production",
-    "heroku-postbuild": "echo Skip build on Heroku"
+    "heroku-postbuild": "npm run build"
   },
   "keywords": [],
   "author": "",
