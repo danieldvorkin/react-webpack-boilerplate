@@ -4,7 +4,7 @@ export default class NavBar extends Component {
   render(){
     return (
       <nav className="navbar navbar-expand-sm bg-dark">
-        <a className="navbar-brand" href="#">Navbar</a>
+        <a className="navbar-brand" href="/">Gamer Drip</a>
 
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
           <span className="navbar-toggler-icon"></span>
@@ -13,13 +13,7 @@ export default class NavBar extends Component {
         <div className="collapse navbar-collapse" id="collapsibleNavbar">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" href="#">Link</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">Link</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">Link</a>
+              <a className="nav-link" href="/">Home</a>
             </li>
           </ul>
         </div>
