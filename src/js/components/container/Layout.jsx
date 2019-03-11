@@ -4,6 +4,8 @@ import ReactDOM from "react-dom";
 // Components
 import NavBar from '../presentational/NavBar.jsx';
 import Welcome from '../presentational/Welcome.jsx';
+import Button from '../presentational/Button.jsx';
+import Timer from '../presentational/Timer.jsx';
 
 // import FormContainer from "./FormContainer.jsx";
 // import Input from "../presentational/Input.jsx";
@@ -27,9 +29,14 @@ class Layout extends Component {
 
   render() {
     return (
-      <div onClick={this.increaseClicked.bind(this)}>
-        <h1>Hello {this.state.firstName}</h1>
-        <p>You've clicked hello {this.state.clicked} times</p>
+      <div>
+        <NavBar />
+        <div className="container">
+          <h1>Hello {this.state.firstName}</h1>
+          <p>You've clicked {this.state.clicked} times</p>
+          <Timer />
+          <Button label="Click Me" method={this.increaseClicked.bind(this)}/>
+        </div>
       </div>
     );
   }
